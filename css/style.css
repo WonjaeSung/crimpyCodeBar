@@ -1,0 +1,328 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+
+
+
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Teko';
+  src: url('teko/Teko-Regular.ttf');
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: 'Teko';
+  src: url('teko/Teko-Light.ttf');
+  font-weight:lighter;
+}
+
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('static/Quicksand-Light.ttf');
+  font-weight:100;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('static/Quicksand-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('static/Quicksand-Regular.ttf');
+  font-weight:300;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('static/Quicksand-Bold.ttf');
+  font-weight: 800;
+}
+
+h1{
+  padding-bottom: 40px;
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+  border-bottom: solid;
+  color: lightgoldenrodyellow;
+  border-bottom-color: gold;
+    FONT-FAMILY: TEKO;
+    FONT-SIZE: 80PX;
+    FONT-WEIGHT: 500;
+}
+
+body {
+  font-family:"Quicksand",sans-serif;
+  border: 7px double gold;
+  color: goldenrod;
+  margin: 70px;
+  padding: 20px;
+  background: #0e2426;  
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  margin: auto;
+  padding: 10px;
+  height: 300px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+  .getDrink {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    border-bottom: solid;
+    padding-bottom: 40px;
+}
+
+
+.wrap-collabsible {
+  /* display: flex; */
+  margin: 1.2rem 0;
+  width: 50%;
+  padding: 10px;
+  border-right: solid;
+}
+
+
+.drink-search {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-family:quicksand;
+  color:goldenrod;
+}
+
+
+input[type='checkbox'] { display: none; } 
+
+.wrap-collabsible { margin: 1.2rem 0; } 
+
+.lbl-toggle { 
+  display: block; 
+  font-weight: bold; 
+  font-family: quicksand; 
+  font-size: 1.2rem; 
+  text-align: center; 
+  padding: 1rem; 
+  color: lightgoldenrodyellow; 
+  background: space; 
+  cursor: pointer; 
+  border-radius: 7px; 
+  transition: all 0.7s ease-out; 
+} 
+
+.lbl-toggle:hover { color: #FFF; } .lbl-toggle::before { content: ' '; display: inline-block; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid currentColor; vertical-align: middle; margin-right: .7rem; transform: translateY(-2px); transition: transform .2s ease-out; } .toggle:checked+.lbl-toggle::before { transform: rotate(90deg) translateX(-3px); } 
+
+.collapsible-content { 
+  font-family: quicksand;
+  max-height: 0px; 
+  overflow: hidden; 
+  transition: max-height .7s ease-in-out; 
+}
+ .toggle:checked + .lbl-toggle + .collapsible-content { max-height: 350px; } .toggle:checked+.lbl-toggle { border-bottom-right-radius: 0; border-bottom-left-radius: 0; } 
+ .collapsible-content .content-inner {border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; padding: .5rem 1rem; } .collapsible-content p { margin-bottom: 0; }
+
+ .content-inner {
+  /* width: 150px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*
+.content-inner button:hover{
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.content-inner button:after{
+  content: '';
+  position:absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform .5s ease-out;
+}
+
+.content-inner button:hover:after {
+  transform: scaleX(1);
+  /*transform-origin: bottom left;*/
+
+
+ul.content-inner {
+  list-style: none;
+}
+
+button {
+  background: #0e2426; 
+  border:none;
+  color: bisque;
+  border-radius:5px;
+  margin:5px;
+  cursor: pointer;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+  font-size: 15px;
+};
+
+button:hover {
+  color:#000000;
+  background-color:#FFFFFF;
+}
+
+button:hover {
+  text-decoration-color:goldenrod;
+}
+
+
+input[type="text"] {
+  margin-bottom: 7px;
+}
+
+input.drinkName {
+  margin: auto;
+  width: 80%;
+  background: lightgray;
+  border-radius: 0.5em;
+  height: 25px;
+  padding: 10px;
+}
+
+h2.name {
+    font-family: 'Teko';
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h3{  
+  font-weight: 100;
+}
+
+h4 {
+  margin: 2px;
+  color: lightgoldenrodyellow;
+  text-align: center;
+  /* font-size: 20px; */
+  font-family: 'Teko';
+  font-weight: 100;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+
+button.search {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 15px;
+  height: 25px;
+  text-decoration: none;
+  border-radius: 1em;
+  height: 1.5em;
+  color: black;
+  background-color: goldenrod;
+}
+
+.display {
+  padding: 100px;
+}
+
+label.lbl-toggle {
+  font-family: 'Teko';
+  font-weight: 100;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media only screen and (max-width: 768px) {
+  img {
+    height: 250px;
+  }
+  .display{
+    padding: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    height: 200px;
+  }
+  .display{
+    padding: 25px;
+  }
+  .getDrink{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .wrap-collabsible{
+    width:100%;
+    border-right: none;
+    border-bottom:solid;
+    margin: 5px;
+    padding: 0;
+  }
+
+  h1{
+    font-size: 40px;
+    padding-bottom:15px;
+    margin:auto;
+    font-weight: bold;
+  }
+  
+  .drink-search{
+    padding-top: 10px;  
+  }
+
+  h2.name{
+    font-size:35px; 
+  }
+
+  h3{
+    font-size:medium;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+  body{
+  margin:35px;
+  }
+  img {
+    height: 150px;
+  }
+  .display{
+    padding:15px;
+  }
+  h2.name{
+    font-size:30px; 
+  }
+
+  h3{
+    font-size:small;
+  }
+}
