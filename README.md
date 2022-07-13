@@ -1,5 +1,5 @@
 # CrimpyCode Bar: <a href="https://poke-matchcards.netlify.app/" target="_blank">Try Here</a>
-<a href="https://poke-matchcards.netlify.app/" target="_blank"><img src="https://https://github.com/WonjaeSung/crimpyCodeBar/crimpyCodeBar.gif" /></a>
+<a href="https://poke-matchcards.netlify.app/" target="_blank"><img src="https://https://github.com/WonjaeSung/crimpyCodeBar/crimpyCodeBar1.gif" /></a>
 
 Not only you are able to look up any cocktail receipes, we would also like to offer you some suggestions if you need new cocktail ideas!
 
