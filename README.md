@@ -1,9 +1,9 @@
-# CrimpyCode Bar: <a href="https://poke-matchcards.netlify.app/" target="_blank">Try Here</a>
-<a href="https://poke-matchcards.netlify.app/" target="_blank"><img src="https://https://github.com/WonjaeSung/crimpyCodeBar/crimpyCodeBar1.gif" /></a>
+# CrimpyCode Bar: <a href="https://crimpycodebar.netlify.app/" target="_blank">Try Here</a>
+<a href="https://crimpycodebar.netlify.app/" target="_blank"><img height="500px" src="crimpyCodeBar.gif" /></a>
 
 Not only you are able to look up any cocktail receipes, we would also like to offer you some suggestions if you need new cocktail ideas!
 
-## Tech used: <p>  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a></p>
+## Tech used: <p><br>  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a></p>
 
 My learning was focused on making an elegant and responsive application, for users to be able to search for cocktail receipes.
 
