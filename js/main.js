@@ -108,16 +108,27 @@ let search = {
         console.log(arrIngredients)
         
         displayIngredients = []
-        for(let i=0; i< arrIngredients.length/2; i++){
-            displayIngredients.push(`${arrIngredients[arrIngredients.length/2+i][1]} of ${arrIngredients[i][1]}`);
+        if(arrIngredients.length % 2 == 1){
+            for(let i=0; i< Math.ceil(arrIngredients.length/2); i++){
+                if (i === Math.floor(arrIngredients.length/2)) {
+                    displayIngredients.push(`and ${arrIngredients[i][1]}`)}
+
+                else displayIngredients.push(`${arrIngredients[Math.ceil(arrIngredients.length/2)+i][1]} of ${arrIngredients[i][1]}`);
+            }
         }
-        console.log(displayIngredients.join (', ')) 
+        
+        else
+            for(let i=0; i< arrIngredients.length/2; i++){
+                //if it's a last ingredient, add "and" to the beginning.
+                if (i===(arrIngredients.length/2-1)) {
+                    displayIngredients.push(`and ${arrIngredients[arrIngredients.length/2+i][1]} of ${arrIngredients[i][1]}`)
+                }
+                else displayIngredients.push(`${arrIngredients[arrIngredients.length/2+i][1]} of ${arrIngredients[i][1]}`);
+            }
         document.querySelector('.name').innerHTML = `${drinks.strDrink}`;
         document.querySelector('.ingredients').innerHTML = `<b>Ingredients: </b>${displayIngredients.join (', ')}`;
         document.querySelector('.instructions').innerHTML = `<b>Instructions: </b>${drinks.strInstructions}`;
         document.querySelector('img').src = drinks.strDrinkThumb;
-        
-        
     },
 
     drinkName: function (){
