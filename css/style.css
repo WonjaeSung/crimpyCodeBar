@@ -201,7 +201,8 @@ input[type="text"] {
 input.drinkName {
   margin: auto;
   width: 80%;
-  background: lightgray;
+  color: lightgoldenrodyellow;
+  background: black;
   border-radius: 0.5em;
   height: 25px;
   padding: 10px;
@@ -242,7 +243,7 @@ button.search {
 }
 
 .display {
-  padding: 100px;
+  padding: 10px 100px 100px 100px;
 }
 
 label.lbl-toggle {
@@ -250,6 +251,20 @@ label.lbl-toggle {
   font-weight: 100;
   font-size: 25px;
   letter-spacing: 2px;
+}
+
+select#arr {
+  width: 100%;
+  max-width: 200px;
+  background: black;
+  color: lightgoldenrodyellow;
+}
+
+button#optionSearch {
+  background: goldenrod;
+  color: black;
+  margin-left: 0px;
+  margin-top: 10px
 }
 
 /******************************************
@@ -261,7 +276,7 @@ label.lbl-toggle {
     height: 250px;
   }
   .display{
-    padding: 50px;
+    padding: 10px 50px 50px 50px;
   }
 
 }
@@ -271,7 +286,7 @@ label.lbl-toggle {
     height: 200px;
   }
   .display{
-    padding: 25px;
+    padding: 10px 25px 25px 25px;
   }
   .getDrink{
     flex-direction: column;
